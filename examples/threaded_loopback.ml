@@ -18,7 +18,7 @@ let rec publish count socket =
 let () =
   let context = Context.create () in
 
-  let publish_socket = Socket.create context Socket.pub in
+  let publish_socket = Socket.create context Socket.publ in
   let publish_thread =
     Socket.bind publish_socket "tcp://*:5000";
     Thread.create (publish 0) publish_socket in

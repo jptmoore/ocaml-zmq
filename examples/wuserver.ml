@@ -4,7 +4,7 @@ open ZMQ;;
 let randint a b = (Random.int (b - a + 1)) + a;;
 
 let context = ZMQ.Context.create () in
-let publisher = ZMQ.Socket.create context ZMQ.Socket.pub in
+let publisher = ZMQ.Socket.create context ZMQ.Socket.publ in
 ZMQ.Socket.bind publisher "tcp://*:5556";
 
 while true do

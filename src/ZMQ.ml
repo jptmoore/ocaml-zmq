@@ -60,7 +60,7 @@ module Socket = struct
   type 'a kind = int
 
   let pair   = 0
-  let pub    = 1
+  let publ    = 1
   let sub    = 2
   let req    = 3
   let rep    = 4

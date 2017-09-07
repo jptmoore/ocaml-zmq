@@ -32,7 +32,7 @@ module Socket : sig
   type 'a kind
 
   val pair   : [>`Pair] kind
-  val pub    : [>`Pub] kind
+  val publ    : [>`Pub] kind
   val sub    : [>`Sub] kind
   val req    : [>`Req] kind
   val rep    : [>`Rep] kind
